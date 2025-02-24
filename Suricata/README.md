@@ -47,9 +47,9 @@ Ensure the rules are readable only by Suricata to maintain security.
 
 Edit the Suricata configuration file to set up important variables like HOME_NET, EXTERNAL_NET, and the rule file locations.
 
-Edit suricata.yaml
+`Edit suricata.yaml`
 
-sudo nano /etc/suricata/suricata.yaml
+`sudo nano /etc/suricata/suricata.yaml`
 
 Modify the following parameters according to your network setup:
 
@@ -60,9 +60,8 @@ Add rule files configuration:
 rule-files: 
 
   - "*.rules"
-  - 
   - "/etc/suricata/rules/*.rules"
-  - 
+    
 ### Configure High-Speed Capture (Optional)
 If you're using a high-speed network interface, configure Suricata to capture packets efficiently using af-packet.
 
