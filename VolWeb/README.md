@@ -29,10 +29,23 @@ Please take the time to read the documentation to avoid common misconfiguration 
 - Volatility 3 framework
 - A cloud storage solution (optional)
 
-### Example Installation
+## Install dependencies:
 
-1. **Clone the VolWeb repository:**
+Ensure all Python dependencies are installed. Run the following command to install the required packages:
 
-   git clone https://github.com/k1nd0ne/VolWeb.git
-   
-   cd VolWeb
+pip install -r requirements.txt
+
+## Configure Docker:
+
+VolWeb uses Docker for container management. You need to make sure Docker is installed on your machine. If you haven't done so already, follow the instructions on the official Docker site.
+
+Next, use docker-compose to start the necessary services:
+
+docker-compose up
+
+## Access the web interface:
+
+Once the containers are up and running, you can access the VolWeb web interface via your browser at the following address:
+
+http://localhost:8000
+
