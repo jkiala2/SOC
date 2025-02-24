@@ -2,16 +2,18 @@
 # Overview
 The goal of this project is to create an automated solution for security monitoring, detection, and response. By leveraging open-source tools, the objective is to streamline incident management and improve the overall security posture.
 # Tools Used:
-Suricata: Network intrusion detection.
+**Suricata**: Network intrusion detection.
 
-Wazuh: SIEM for log collection and correlation.
+**Wazuh**: SIEM for log collection and correlation.
 
-OpenCTI: Threat Intelligence for threat analysis.
+**Graylog**: Log management and real-time analysis.
 
-TheHive & Cortex: Incident management and automation.
+**OpenCTI**: Threat Intelligence for threat analysis.
 
-Zappix: Infrastructure monitoring.
+**TheHive & Cortex**: Incident management and automation.
 
-Volweb: Forensic analysis of incidents.
+**Zappix**: Infrastructure monitoring.
 
-Graylog: Log management and real-time analysis.
+**Volweb**: Forensic analysis of incidents.
+
+
