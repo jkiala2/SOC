@@ -21,6 +21,7 @@ docker-compose up -d
 Access the web interface: Once the services are running, you can access the OpenCTI user interface at the following address: **http://localhost:8080** (by default).
 
 user: admin@opencti.io
+
 password=changeme
 
 You have to modify them in the .env file by doing nano .env 
