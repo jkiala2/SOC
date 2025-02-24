@@ -1,0 +1,65 @@
+services:
+  # TheHive service
+  thehive:
+    image: thehiveproject/thehive:latest
+    container_name: thehive
+    environment:
+      - "CASSANDRA_HOST=cassandra"
+      - "CASSANDRA_KEYSPACE=thehive"
+      - "ES_HOST=elasticsearch"
+      - "ES_PORT=9201"
+      - "HIVESERVER_URL=http://thehive:9000"
+      - "SECRET_KEY=your_secret_key"  # Replace with your own secret key
+    ports:
+      - "0.0.0.0:9001:9000"  # Accessible from all IPs
+    depends_on:
+      - cassandra
+      - elasticsearch
+    networks:
+      - thehive_net
+
+  # Cortex service
+  cortex:
+    image: thehiveproject/cortex:latest
+    container_name: cortex
+    environment:
+      - "CORTEX_URL=http://cortex:9001"
+      - "CORTEX_SECRET_KEY=your_cortex_secret_key"  # Replace with your own secret key
+      - "CORTEX_ACCEPT_LICENSE=true"
+    ports:
+      - "0.0.0.0:9002:9001"  # Accessible from all IPs
+    depends_on:
+      - thehive
+    networks:
+      - thehive_net
+
+  # Cassandra service for TheHive
+  cassandra:
+    image: cassandra:latest
+    container_name: cassandra
+    environment:
+      - "CASSANDRA_CLUSTER_NAME=TheHiveCluster"
+    networks:
+      - thehive_net
+
+  # Elasticsearch service for TheHive
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0
+    container_name: elasticsearch
+    environment:
+      - "discovery.type=single-node"
+    ports:
+      - "0.0.0.0:9201:9200"  # Elasticsearch accessible on port 9201
+    networks:
+      - thehive_net
+
+  # MongoDB service for Cortex (if needed by some analyzers)
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    networks:
+      - thehive_net
+
+networks:
+  thehive_net:
+    driver: bridge
