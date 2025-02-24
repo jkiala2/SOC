@@ -17,6 +17,7 @@ Git installed to clone the repository.
 Clone the official Wazuh Docker repository:
 
 git clone https://github.com/jkiala2/SOC.git
+
 cd wazuh
 
 ## 2️⃣ Generate SSL Certificates
