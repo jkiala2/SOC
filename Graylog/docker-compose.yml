@@ -1,0 +1,48 @@
+services:
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb
+    restart: always
+    volumes:
+      - mongo_data:/data/db
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.2
+    container_name: elasticsearch_graylog  # Nouveau nom pour éviter le conflit
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    ports:
+      - "9202:9200"  # Elasticsearch accessible sur le port 9202
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    restart: always
+
+  graylog:
+    image: graylog/graylog:5.0
+    container_name: graylog1
+    depends_on:
+      - mongodb
+      - elasticsearch
+    environment:
+      - GRAYLOG_PASSWORD_SECRET=some_secret_password
+      - GRAYLOG_ROOT_PASSWORD_SHA2=5e884898da28047151d0e56f8dc6292773603d0d6aabbdd6a9ed3bbe8f12b868  # "password" en SHA-256
+      - GRAYLOG_HTTP_EXTERNAL_URI=http://0.0.0.0:9008/
+    ports:
+      - "9008:9000"   # Accès à Graylog depuis toutes les IPs
+      - "1514:1514"
+      - "1514:1514/udp"
+      - "12201:12201"
+      - "12201:12201/udp"
+    volumes:
+      - graylog_data:/usr/share/graylog/data
+    restart: always
+
+volumes:
+  mongo_data:
+  es_data:
+  graylog_data:
