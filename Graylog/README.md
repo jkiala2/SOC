@@ -36,24 +36,24 @@ Open your browser and navigate to http://localhost:9008 to access the Graylog we
 
 Default credentials:
 
-Username: admin
+- Username: admin
 
-Password: The value of GRAYLOG_ROOT_PASSWORD_SHA2 (SHA256 hash of "password").
+- Password: The value of GRAYLOG_ROOT_PASSWORD_SHA2 (SHA256 hash of "password").
 
 Elasticsearch: Accessible at http://localhost:9202.
 
 ## Troubleshooting
 If the containers are not starting, check the logs for each service:
 
-docker-compose logs <service-name>
+- docker-compose logs <service-name>
 
 To stop the containers, run:
 
-docker-compose down
+- docker-compose down
 
 If you need to rebuild the images (after making changes), use:
 
-docker-compose up --build -d
+- docker-compose up --build -d
 
 ### Volumes
 The following Docker volumes are used to persist data across container restarts:
