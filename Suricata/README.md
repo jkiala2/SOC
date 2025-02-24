@@ -27,21 +27,21 @@ Suricata uses a rule-based system to detect various types of attacks. You can do
 
 Download Emerging Threats Rules
 
-cd /tmp/ && curl -LO https://rules.emergingthreats.net/open/suricata-6.0.8/emerging.rules.tar.gz
+`cd /tmp/ && curl -LO https://rules.emergingthreats.net/open/suricata-6.0.8/emerging.rules.tar.gz`
 
 Extract and Install the Rules
 
 Now, extract the downloaded rules and move them to the proper directory for Suricata to use.
 
-mkdir -p /etc/suricata/rules/
+`mkdir -p /etc/suricata/rules/`
 
-sudo tar -xvzf emerging.rules.tar.gz && sudo mv rules/*.rules /etc/suricata/rules/
+`sudo tar -xvzf emerging.rules.tar.gz && sudo mv rules/*.rules /etc/suricata/rules/`
 
 Set Proper Permissions
 
 Ensure the rules are readable only by Suricata to maintain security.
 
-sudo chmod 640 /etc/suricata/rules/*.rules
+`sudo chmod 640 /etc/suricata/rules/*.rules`
 
 ### Step 3: Configure Suricata
 
