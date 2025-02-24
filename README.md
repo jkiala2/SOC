@@ -18,6 +18,10 @@ The goal of this project is to create an automated solution for security monitor
 
 # Project Objectives:
 Automation: Streamline detection and response processes to enhance efficiency.
+
+
 Continuous Improvement: Build a scalable and flexible infrastructure for ongoing security enhancement.
+
+
 Cost Reduction: Utilize open-source solutions to minimize expenses while ensuring high-quality security
 
