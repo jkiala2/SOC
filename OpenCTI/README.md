@@ -8,8 +8,15 @@ YOpenCTI relies on several main components: a web user interface, a backend (API
 
 Clone the OpenCTI repository:
 
+git clone https://github.com/jkiala2/SOC.git
+cd OpenCTI
 
-### Status & bugs
+Launch the services with Docker Compose: OpenCTI comes with a **docker-compose.yml** file to manage the necessary services. 
 
-Currently OpenCTI is under heavy development, if you wish to report bugs or ask for new features, you can directly use the [Github issues module](https://github.com/OpenCTI-Platform/opencti/issues).
+Simply run the following command:
+
+docker-compose up -d
+
+Access the web interface: Once the services are running, you can access the OpenCTI user interface at the following address: **http://localhost:8080** (by default).
+
 
