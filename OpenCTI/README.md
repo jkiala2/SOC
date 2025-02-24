@@ -9,6 +9,7 @@ YOpenCTI relies on several main components: a web user interface, a backend (API
 Clone the OpenCTI repository:
 
 git clone https://github.com/jkiala2/SOC.git
+
 cd OpenCTI
 
 Launch the services with Docker Compose: OpenCTI comes with a **docker-compose.yml** file to manage the necessary services. 
