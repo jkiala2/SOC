@@ -27,6 +27,9 @@ Clone the repository:
 
 git clone https://github.com/k1nd0ne/VolWeb.git
 
+cd VolWeb
+
+
 ### Prerequisites
 - Python 3.x
 - Docker (for containerization)
