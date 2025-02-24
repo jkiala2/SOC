@@ -15,22 +15,22 @@ The goal of this project is to create an automated solution for security monitor
 **Volweb**: Forensic analysis of incidents.
 
 # Project Objectives:
-Automation: Streamline detection and response processes to enhance efficiency.
+- Automation: Streamline detection and response processes to enhance efficiency.
 
 
-Continuous Improvement: Build a scalable and flexible infrastructure for ongoing security enhancement.
+- Continuous Improvement: Build a scalable and flexible infrastructure for ongoing security enhancement.
 
 
-Cost Reduction: Utilize open-source solutions to minimize expenses while ensuring high-quality security
+- Cost Reduction: Utilize open-source solutions to minimize expenses while ensuring high-quality security
 
 # Benefits:
-Enhanced detection and faster response to incidents.
+- Enhanced detection and faster response to incidents.
 
-Continuous learning and adaptation to emerging threats.
+- Continuous learning and adaptation to emerging threats.
 
-Cost-effective security infrastructure through open-source tools.
+- Cost-effective security infrastructure through open-source tools.
 
 # 📌 Prerequisites
-Docker and Docker Compose installed on your system.
+- Docker and Docker Compose installed on your system.
 
-Git installed to clone the repository.
+- Git installed to clone the repository.
