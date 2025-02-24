@@ -20,6 +20,11 @@ docker-compose up -d
 
 Access the web interface: Once the services are running, you can access the OpenCTI user interface at the following address: **http://localhost:8080** (by default).
 
+user: admin@opencti.io
+password=changeme
+
+You have to modify them in the .env file by doing nano .env 
+
 # 2. Connector Configuration
 
 OpenCTI allows the integration of several connectors to retrieve Threat Intelligence data from different sources. These connectors enable the platform to be fed with real-time threat information.
