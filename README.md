@@ -32,3 +32,7 @@ Continuous learning and adaptation to emerging threats.
 
 Cost-effective security infrastructure through open-source tools.
 
+# 📌 Prerequisites
+Docker and Docker Compose installed on your system.
+
+Git installed to clone the repository.
