@@ -81,7 +81,7 @@ If another service is using ports 9001 or 9002, you can modify the port mappings
 Customization
 TheHive and Cortex are highly customizable. You can modify environment variables and configuration settings as needed to fit your requirements.
 
-## Storage: You may want to configure persistent storage for Cassandra and Elasticsearch to retain data across container restarts. This can be done by mounting volumes in the docker-compose.yml.
+Storage: You may want to configure persistent storage for Cassandra and Elasticsearch to retain data across container restarts. This can be done by mounting volumes in the docker-compose.yml.
 
 # Useful Links
 TheHive Documentation: https://thehive-project.org/docs/
