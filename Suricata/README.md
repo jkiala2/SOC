@@ -14,11 +14,11 @@ This guide provides the steps to install Suricata, configure it with custom rule
 
 First, add the Suricata stable repository and install the software package.
 
-sudo add-apt-repository ppa:oisf/suricata-stable
+`sudo add-apt-repository ppa:oisf/suricata-stable`
 
-sudo apt-get update
+`sudo apt-get update`
 
-sudo apt-get install suricata -y
+`sudo apt-get install suricata -y`
 
 This will install Suricata and all its dependencies.
 
