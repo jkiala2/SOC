@@ -4,13 +4,15 @@ The goal of this project is to create an automated solution for security monitor
 # Tools Used:
 **Suricata**: Network intrusion detection.
 
-**Wazuh**: SIEM for log collection and correlation.
+**Wazuh**: SIEM and XDR
 
 **Graylog**: Log management and real-time analysis.
 
 **OpenCTI**: Threat Intelligence for threat analysis.
 
 **TheHive & Cortex**: Incident management and automation.
+
+**Shuffle**: SOAR platform
 
 **Volweb**: Forensic analysis of incidents.
 
