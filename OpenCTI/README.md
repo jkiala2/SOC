@@ -2,7 +2,7 @@
 
 ## Installation of OpenCTI
 
-YOpenCTI relies on several main components: a web user interface, a backend (API), and a database. It is recommended to use Docker to simplify the installation process.
+OpenCTI relies on several main components: a web user interface, a backend (API), and a database. It is recommended to use Docker to simplify the installation process.
 
 ## Steps to install OpenCTI using Docker:
 
