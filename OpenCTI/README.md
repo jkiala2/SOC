@@ -1,10 +1,13 @@
-# OpenCTI Docker deployment
+# OpenCTI: Installation and Usage of Connectors
 
-## Documentation
+## Installation of OpenCTI
 
-You can find the detailed documentation about the Docker installation in the [OpenCTI documentation space](https://docs.opencti.io/latest/deployment/installation/#using-docker).
+YOpenCTI relies on several main components: a web user interface, a backend (API), and a database. It is recommended to use Docker to simplify the installation process.
 
-## Community
+## Steps to install OpenCTI using Docker:
+
+Clone the OpenCTI repository:
+
 
 ### Status & bugs
 
