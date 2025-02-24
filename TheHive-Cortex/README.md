@@ -85,6 +85,9 @@ Storage: You may want to configure persistent storage for Cassandra and Elastics
 
 # Useful Links
 TheHive Documentation: https://thehive-project.org/docs/
+
 Cortex Documentation: https://thehive-project.org/cortex/
+
 Docker: https://www.docker.com/
+
 Docker Compose: https://docs.docker.com/compose/
