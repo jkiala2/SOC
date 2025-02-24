@@ -43,8 +43,11 @@ This should display the running containers for TheHive, Cortex, Cassandra, Elast
 After the containers are up and running, you can access TheHive through your browser.
 
 URL: http://yourIP:9001
+
 Default credentials:
+
 Username: admin
+
 Password: admin
 Once logged in, you can start managing incidents and investigations.
 
