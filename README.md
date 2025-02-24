@@ -12,8 +12,6 @@ The goal of this project is to create an automated solution for security monitor
 
 **TheHive & Cortex**: Incident management and automation.
 
-**Zappix**: Infrastructure monitoring.
-
 **Volweb**: Forensic analysis of incidents.
 
 # Project Objectives:
