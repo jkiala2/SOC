@@ -31,7 +31,6 @@ These secret keys must be replaced with your own strong secret keys for security
 
 Once you have your `docker-compose.yml` configured, navigate to the directory containing the `docker-compose.yml` file and run the following command to start the containers:
 
-```bash
 docker-compose up -d
 
 ### 4. Check if Services Are Running
@@ -72,13 +71,13 @@ docker-compose up -d
 Ensure that Docker is running properly.
 Check the logs using docker-compose logs for more detailed error messages.
 
-Port Conflicts:
+## Port Conflicts:
 
 If another service is using ports 9001 or 9002, you can modify the port mappings in the docker-compose.yml file.
 Customization
 TheHive and Cortex are highly customizable. You can modify environment variables and configuration settings as needed to fit your requirements.
 
-Storage: You may want to configure persistent storage for Cassandra and Elasticsearch to retain data across container restarts. This can be done by mounting volumes in the docker-compose.yml.
+## Storage: You may want to configure persistent storage for Cassandra and Elasticsearch to retain data across container restarts. This can be done by mounting volumes in the docker-compose.yml.
 
 # Useful Links
 TheHive Documentation: https://thehive-project.org/docs/
