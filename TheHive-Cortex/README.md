@@ -49,6 +49,7 @@ Default credentials:
 Username: admin
 
 Password: admin
+
 Once logged in, you can start managing incidents and investigations.
 
 ### 6. Access Cortex
