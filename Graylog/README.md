@@ -13,25 +13,23 @@ Before you begin, ensure that you have the following installed:
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
-Build and start the containers using Docker Compose:
+   git clone https://github.com/jkiala2/SOC.git.git
+   cd Graylog
 
-bash
-Copier
-Modifier
+### Build and start the containers using Docker Compose:
+
 docker-compose up -d
+
 This will start the following services:
 
-MongoDB: Database for Graylog.
-Elasticsearch: Search and indexing service for Graylog.
-Graylog: Centralized logging interface.
+- MongoDB: Database for Graylog.
+- Elasticsearch: Search and indexing service for Graylog.
+- Graylog: Centralized logging interface.
+
 To check if the services are running correctly, use the following command:
 
-bash
-Copier
-Modifier
-docker-compose ps
+'docker ps '
+
 Configuration
 The services are configured with the following environment variables:
 
