@@ -75,7 +75,7 @@ Enable Stats
 Ensure Suricata is configured to gather and send statistics:
 
 stats:
-  enabled: yes
+  - enabled: yes
 
 ## Step 4: Restart Suricata
 After making the changes, restart Suricata to apply the new configurations.
