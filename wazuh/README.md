@@ -36,15 +36,25 @@ This will generate certificates in the config/wazuh_indexer_ssl_certs/ directory
 Copy your existing SSL certificates into config/wazuh_indexer_ssl_certs/ with the following structure:
 
 config/wazuh_indexer_ssl_certs/
+
 ├── root-ca.pem
+
 ├── wazuh.indexer-key.pem
+
 ├── wazuh.indexer.pem
+
 ├── admin.pem
+
 ├── admin-key.pem
+
 ├── root-ca-manager.pem
+
 ├── wazuh.manager.pem
+
 ├── wazuh.manager-key.pem
+
 ├── wazuh.dashboard.pem
+
 ├── wazuh.dashboard-key.pem
 
 ## 3️⃣ Start the Wazuh Stack
