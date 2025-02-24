@@ -23,7 +23,7 @@ Please take the time to read the documentation to avoid common misconfiguration 
 
 ## 🛠️ Installation
 
-Clone the repository:"
+Clone the repository:
 
 git clone https://github.com/k1nd0ne/VolWeb.git
 
