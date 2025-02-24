@@ -54,7 +54,9 @@ Edit the Suricata configuration file to set up important variables like HOME_NET
 Modify the following parameters according to your network setup:
 
 HOME_NET: Set this to your local network's IP range (e.g., 192.168.1.0/24).
+
 EXTERNAL_NET: Set this to "any" to allow Suricata to monitor all external traffic.
+
 Add rule files configuration:
 
 rule-files: 
