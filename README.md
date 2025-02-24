@@ -34,3 +34,9 @@ The goal of this project is to create an automated solution for security monitor
 - Docker and Docker Compose installed on your system.
 
 - Git installed to clone the repository.
+
+ # Technical requirements:
+
+- Total RAM: 16 to 32 GB (to support all VMs running simultaneously, with a buffer for handling peak loads).
+- Processor: 8 to 12 physical cores to ensure smooth performance, depending on network load and log processing.
+- Total Storage: 300 to 500 GB minimum (depending on log retention, analytical data, and incident files).
