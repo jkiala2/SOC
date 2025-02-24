@@ -32,7 +32,7 @@ To check if the services are running correctly, use the following command:
 
 ## Accessing the Services
 ### Graylog UI: 
-Open your browser and navigate to http://localhost:9008 to access the Graylog web interface.
+Open your browser and navigate to http://yourIP:9008 to access the Graylog web interface.
 
 Default credentials:
 
@@ -40,7 +40,7 @@ Default credentials:
 
 - Password: The value of GRAYLOG_ROOT_PASSWORD_SHA2 (SHA256 hash of "password").
 
-Elasticsearch: Accessible at http://localhost:9202.
+Elasticsearch: Accessible at http://yourIP:9202.
 
 ## Troubleshooting
 If the containers are not starting, check the logs for each service:
